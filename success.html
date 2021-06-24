@@ -1,0 +1,62 @@
+<html>
+    <title>Form Submission</title>
+    <head>
+        <style>
+          h1,h2{
+              text-align: center;
+              text-shadow: cadetblue;
+              color: rgb(7, 21, 148);
+              margin-top: 60px;
+          }
+          .logo{
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+              margin-top: 105px;
+          }
+          .mono{
+              text-align: center;
+              color: darkgreen;
+              font-weight: bolder;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              margin-top: 80px;
+          }
+          body{
+             background-image: url('back3.jpg');
+             background-size:cover;
+            background-repeat: no-repeat;
+          }
+          .non-control{
+    
+    background:transparent;
+    color:tomato;
+    cursor:pointer;
+    padding:6px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: medium;
+    background-position: center;
+    margin-left: 700px;
+
+}
+.non-control:hover{
+     background-color:blue;
+
+}
+
+        </style>
+        <script>
+            window.history.forward(); function preventBack() { window.history.forward(1); };
+        </script>
+    </head>
+    <body>
+       <form action="home2.php" methods="POST">
+        <h1>Your details have been stored successfully </h1>
+       
+        <figure>
+        <img src="end1.jpg" class="logo" width="300px" height="300px">
+        <figcaption class="mono"> I need blood instead of tears</figcaption>
+        <button type="submit" value="submit" class="non-control">OK</button>
+    </form>
+    </body>
+</html>
